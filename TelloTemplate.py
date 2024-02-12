@@ -60,6 +60,12 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
+        # Square - Pilot - Avonlea Thalmann - CoPilot - Jensen Muday
+
+        # Triangle - Pilot - Jensen Muday - CoPilot - AvonLea Thalmann
+
+        # Circle - Pilot Avonlea Thalmann - CoPilot - Jensen Muday
+
         sendmsg('up 150', 5)
         sendmsg('forward 200')
         sendmsg('ccw 360')
