@@ -44,10 +44,10 @@ recvThread.start()
 # CREATE FUNCTIONS HERE....
 
 
-print("\nJensen Muday")
-print("Partner Name: Avonlea Thalmann")
+print("\nJensen")
+print("Program Name: Sandbox")
 print("Date: 2.6.2024 ")
-print("Drone WIFI = DD78")
+print("Drone WIFI = DEC5")
 print("\n****CHECK YOUR TELLO WIFI ADDRESS****")
 print("\n****CHECK SURROUNDING AREA BEFORE FLIGHT****")
 ready = input('\nAre you ready to take flight: ')
@@ -59,16 +59,21 @@ try:
 
         sendmsg('command', 0)
         sendmsg('takeoff')
+        
+     # Square - Pilot = Avonlea Thalmann - CoPilot = Jensen Muday
+        sendmsg('forward 100', )
+        sendmsg('cw 90')
+        sendmsg('forward 100')
+        sendmsg('cw 90')
+        sendmsg('forward 100')
+        sendmsg('cw 90')
+        sendmsg('forward 100')
+        sendmsg('cw 90',)
 
-        # Square - Pilot - Avonlea Thalmann - CoPilot - Jensen Muday
+     # Triangle - Pilot = Jensen Muday - CoPilot = Avonlea Thalmann
 
-        # Triangle - Pilot - Jensen Muday - CoPilot - AvonLea Thalmann
 
-        # Circle - Pilot Avonlea Thalmann - CoPilot - Jensen Muday
-
-        sendmsg('up 150', 5)
-        sendmsg('forward 200')
-        sendmsg('ccw 360')
+     # Circle - Pilot = Avonlea Thalmann - CoPilot = Jensen Muday
 
         sendmsg('land')
 
@@ -76,6 +81,7 @@ try:
 
     else:
         print('\nMake sure you check WIFI, surroundings, co-pilot is ready, re-run program\n')
+
 except KeyboardInterrupt:
     sendmsg('emergency')
 
