@@ -8,12 +8,12 @@ import threading, socket, sys, time, subprocess
 # GLOBAL VARIABLES DECLARED HERE....
 host = ''
 port = 9000
-locaddr = (host,port)
+locaddr = (host, port)
 tello_address = ('192.168.10.1', 8889) # Get the Tello drone's address
 
 
 
-# Creates a UDP socketd
+# Creates a UDP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 sock.bind(locaddr)
@@ -58,9 +58,11 @@ try:
 
         sendmsg('command', 0)
         sendmsg('takeoff')
+        sendmsg('battery?')
 
-        # Review the (SDK) Software Development Kit resource for Drone Commands
-        # Delete these comments before writing your program
+        sendmsg('up 7', 6)
+        sendmsg('forward 250', 6)
+        sendmsg('up 70', 6)
 
         sendmsg('land')
 
