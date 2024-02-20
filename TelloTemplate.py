@@ -1,6 +1,4 @@
-# Started from Tello Template
-# This Python app is in the Public domain
-# Some parts from Tello3.py
+#Drone ID: DEC5
 
 import threading, socket, sys, time, subprocess
 
@@ -60,9 +58,11 @@ try:
         sendmsg('takeoff')
         sendmsg('battery?')
 
-        sendmsg('up 7', 6)
-        sendmsg('forward 250', 6)
-        sendmsg('up 70', 6)
+        sendmsg('up 12', 0)
+        sendmsg('forward 240', 8)
+        sendmsg('ccw 10', 8)
+        sendmsg('go 230, 0, 45, 50', 6)
+
 
         sendmsg('land')
 
