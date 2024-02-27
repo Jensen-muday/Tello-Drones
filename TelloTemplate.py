@@ -62,7 +62,7 @@ try:
         sendmsg('forward 240', 8)
         sendmsg('ccw 10', 8)
         sendmsg('go 230, 0, 45, 50', 6)
-
+        sendmsg('curve 30, 280, 0, -30, 0, 0, 30', 6)
 
         sendmsg('land')
 
