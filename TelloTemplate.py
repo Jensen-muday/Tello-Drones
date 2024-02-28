@@ -58,7 +58,9 @@ try:
         print("\nStarting Drone!\n")
 
         sendmsg('command', 0)
-        sendmsg('takeoff')
+        sendmsg('battery')
+        sendmsg('takeoff', 8)
+
         '''
      # Square - Pilot = Avonlea Thalmann - CoPilot = Jensen Muday
         sendmsg('forward 100', )
@@ -69,7 +71,7 @@ try:
         sendmsg('cw 90')
         sendmsg('forward 100')
         sendmsg('cw 90',)
-        '''
+        
 
 
 
@@ -78,8 +80,10 @@ try:
         for i in range (3):
             sendmsg('forward 80', 10)
             sendmsg('cw 120', 10)
-
+'''
      # Circle - Pilot = Avonlea Thalmann - CoPilot = Jensen Muday
+
+        sendmsg('curve 100, -25, 0, 100, -75, 0, 30')
 
         sendmsg('land')
 
