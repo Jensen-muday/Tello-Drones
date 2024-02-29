@@ -58,11 +58,12 @@ try:
         sendmsg('takeoff')
         sendmsg('battery?')
 
-        sendmsg('up 12', 0)
+        """sendmsg('up 12', 0)
         sendmsg('forward 240', 8)
         sendmsg('ccw 10', 8)
-        sendmsg('go 230, 0, 45, 50', 6)
-        sendmsg('curve 30, 280, 0, -30, 0, 0, 30', 6)
+        sendmsg('go 230, 0, 45, 50', 10)
+        """
+        sendmsg('curve 125, 125, 0, 0, 250, 0, 50')
 
         sendmsg('land')
 
